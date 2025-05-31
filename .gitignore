@@ -1,0 +1,7 @@
+# Игнорируем три очень большие модели (они лежат в папке models/)
+models/catboost_long_run.cbm
+models/catboost_overnight_heavy.cbm
+models/catboost_overnight_pro.cbm
+# Игнорируем кеши Python
+__pycache__/
+*.pyc
