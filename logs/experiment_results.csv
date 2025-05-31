@@ -1,0 +1,2 @@
+timestamp,mae,best_params
+2025-05-30 15:14:38.343100,1268594.5769400334,"{'n_estimators': 483, 'learning_rate': 0.0487439234921055, 'max_depth': 5, 'subsample': 0.8240532293287732, 'colsample_bytree': 0.9431597606912459}"
