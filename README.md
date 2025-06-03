@@ -88,7 +88,7 @@ Script: src/train.py (initial version)
 
 - I split the data into train/test with a 80/20 random split (random_state=42 each time).
 - I used a simple Linear Regression on the un‐scaled features as a baseline. This gave me:
-    - MAE ≈ 18.5 million ₽, MSE ≈ 9.6e14.
+    - MAE ≈ 25 million ₽, MSE ≈ 9.6e14.
 - Then I moved on to a GradientBoostingRegressor (from sklearn.ensemble), tuning only a few parameters:
     - n_estimators ∈ {100, 200, 300}, max_depth ∈ {3, 5, 10}, learning_rate ∈ {0.01, 0.05, 0.1}, subsample ∈ {0.8, 0.9, 1.0}, colsample_bytree ∈ {0.8, 1.0}, via a quick GridSearchCV over 5 folds.
     - After removing ~5% of outliers (with an IsolationForest), the best XGBoost variant (the same pipeline) reached:
